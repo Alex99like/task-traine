@@ -1,3 +1,4 @@
+import { DateCounter } from '../../components/DateCounter/DateCounter'
 import { ImageCustom } from '../../utils/ImageCustom'
 import styles from './Home.module.scss'
 
@@ -9,6 +10,7 @@ export const Home = () => {
       <ImageCustom name='logo' className={styles.logo} alt='' />
       <h3 className={styles.title}>Under Construction</h3>
       <p className={styles.description}>We're making lots of improvements and will be <br />back soon</p>
+      <DateCounter />
     </section>
   )
 }
