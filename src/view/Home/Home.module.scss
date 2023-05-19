@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 110px;
+
+  .left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 420px;
+  }
+
+  .right-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 320px;
+  }
+
+  .logo {
+    position: relative;
+    left: 2px;
+    width: 200px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: $gray-text-color;
+    font-weight: 700;
+    font-size: 72px;
+    margin-top: 75px;
+  }
+
+  .description {
+    position: relative;
+    top: -12px;
+    color: $text-dark-color;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+}
