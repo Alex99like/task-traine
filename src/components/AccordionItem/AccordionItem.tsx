@@ -25,6 +25,9 @@ export const AccordionItem = ({ name, img, date, count, active, setActive }: IAc
       </div>
       <div className={`${styles.card} ${active && styles.active}`}>
         <img src={img} />
+        <div className={styles.image} 
+          style={{ backgroundImage: `url("${img}")` }}
+        />
         <aside className={styles.aside}>
           <h4 className={styles.name}>{name}</h4>
           <span className={styles.date}>{date}</span>

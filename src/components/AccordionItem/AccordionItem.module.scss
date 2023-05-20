@@ -8,7 +8,7 @@
     overflow-y: hidden;
     
     flex-direction: column-reverse;
-    width: 688px;
+    width: 100%;
     height: 85px;
     transition: all 1s linear;
   
@@ -86,11 +86,21 @@
       width: 100%;
   
       img {
-        object-fit: cover;
+        display: none;
+        // object-fit: cover;
+        // position: relative;
+        // bottom: 10px;
+        // width: 100%;
+        // height: 100%;
+      }
+
+      .image {
+        display: block;
+        min-height: 460px;
         position: relative;
-        bottom: 10px;
-        width: 100%;
-        height: 100%;
+        bottom: 5px;
+        background-position: center;
+        background-size: cover;
       }
       
       .aside {
@@ -101,7 +111,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 688px;
+        width: 100%;
         height: 192px;
         background: rgba(18, 18, 18, 0.8);
         backdrop-filter: blur(20px);

@@ -25,13 +25,15 @@
 
   .accordion {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 21px;
     gap: 2px;
+    width: 100%;
 
     @media (max-width: 786px) {
       flex-direction: column;
       margin-top: 10px;
+      padding: 0 30px;
     }
   }
 }
