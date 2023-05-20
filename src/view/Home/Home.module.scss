@@ -13,6 +13,11 @@
     height: 1006px;
   }
 
+  @media (max-width: 360px) {
+    height: 830px;
+    padding-top: 87px;
+  }
+
   .left-image {
     position: absolute;
     top: 0;
@@ -26,6 +31,11 @@
       width: 255px;
       height: 230px;
     }
+
+    @media (max-width: 360px) {
+      width: 150px;
+      height: 190px;
+    }
   }
 
   .right-image {
@@ -36,10 +46,13 @@
     height: 320px;
 
     @media (max-width: 786px) {
-      //top: -20px;
-      //left: -10px;
       width: 240px;
       height: 280px;
+    }
+
+    @media (max-width: 360px) {
+      width: 170px;
+      height: 170px;
     }
   }
 
@@ -53,6 +66,11 @@
       top: -10px;
       //left: 7px;
     }
+
+    @media (max-width: 360px) {
+      width: 140px;
+      
+    }
   }
 
   .title {
@@ -61,10 +79,16 @@
     font-weight: 700;
     font-size: 72px;
     margin-top: 75px;
+    text-align: center;
 
     @media (max-width: 786px) {
       font-size: 36px;
       margin-top: 150px;
+    }
+
+    @media (max-width: 360px) {
+      margin-top: 55px;
+      line-height: 36px;
     }
   }
 
@@ -82,6 +106,10 @@
       font-size: 16px;
       width: 300px;
     }
+
+    @media (max-width: 360px) {
+      margin-top: 18px;
+    }
   }
 
   .description-button {
@@ -94,6 +122,11 @@
       margin-top: 52px;
       font-size: 16px;
     }  
+
+    @media (max-width: 360px) {
+      font-size: 16px;
+      letter-spacing: -0.5px;
+    }
   }
 
   .button {
@@ -113,6 +146,8 @@
     @media (max-width: 786px) {
       margin-top: 15px;
     }  
+
+    
   }
 
   .footer {

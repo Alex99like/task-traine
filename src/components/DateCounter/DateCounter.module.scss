@@ -35,6 +35,10 @@
     height: 80px;
     justify-content: space-between;
   }
+
+  @media (max-width: 360px) {
+    width: 55px;
+  }
   
   .count {
     font-weight: 600;

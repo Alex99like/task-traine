@@ -18,6 +18,10 @@
     align-items: center;
   }
 
+  @media (max-width: 360px) {
+    height: 125px;
+  }
+
   .field {
     width: 440px;
     position: relative;
@@ -27,18 +31,28 @@
       width: 360px;
     }
 
+    @media (max-width: 360px) {
+      width: 280px;
+      top: 3px;
+    }
+
     input {
       position: relative;
-      width: 100%;
+      width: 360px;
       padding: 19px 65px 17px 25px;
       border-radius: 30px;
       border: none;
 
       @media (max-width: 786px) {
-        width: 360px;
-        padding: 0 65px 0 20px;
+        width: 100%;
+        padding: 0 50px 0 20px;
         height: 41px;
         top: -3px;
+      }
+
+      @media (max-width: 360px) {
+        padding: 0 50px 0 20px;
+        // width: 260px;
       }
 
       &::placeholder {
@@ -96,6 +110,10 @@
       right: 0px;
       font-size: 16px;
       gap: 6px;
+    }
+
+    @media (max-width: 360px) {
+      top: 15px;
     }
     
 
