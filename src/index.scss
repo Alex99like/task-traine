@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
+@font-face {
+  font-family: 'SF Pro Display'; // Имя шрифта
+  src: url('./assets/fonts/SF-Pro-Display-Regular.otf') format('opentype'); // Путь к файлу шрифта Regular
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SF Pro Display'; // Имя шрифта
+  src: url('./assets/fonts/SF-Pro-Display-Medium.otf') format('opentype'); // Путь к файлу шрифта Medium
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SF Pro Display'; // Имя шрифта
+  src: url('./assets/fonts/SF-Pro-Display-Semibold.otf') format('opentype'); // Путь к файлу шрифта Semibold
+  font-weight: 600;
+}
+
 * {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;

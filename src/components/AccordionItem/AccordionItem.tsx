@@ -14,6 +14,12 @@ export const AccordionItem = ({ name, img, date, count, active, setActive }: IAc
     <div className={styles.wrapper}>
       <div className={styles.item} onClick={() => setActive(name)}>
         <h3 className={styles.name}>{name}</h3>
+        {!active && (
+          <>
+            <img src={img} className={styles.img} />
+            <div className={styles.bg}></div>
+          </>
+        )}
         <span className={styles.count}>{count}</span>
         <hr className={styles.line} />
       </div>
