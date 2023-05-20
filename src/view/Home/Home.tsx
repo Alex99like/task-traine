@@ -1,4 +1,5 @@
 import { DateCounter } from '../../components/DateCounter/DateCounter'
+import { Footer } from '../../components/Footer/Footer'
 import { ImageCustom } from '../../utils/ImageCustom'
 import styles from './Home.module.scss'
 
@@ -11,6 +12,9 @@ export const Home = () => {
       <h3 className={styles.title}>Under Construction</h3>
       <p className={styles.description}>We're making lots of improvements and will be <br />back soon</p>
       <DateCounter />
+      <p className={styles['description-button']}>Check our event page when you wait:</p>
+      <button className={styles.button}>Go to the event <ImageCustom name='arrow'/></button>
+      <Footer />
     </section>
   )
 }

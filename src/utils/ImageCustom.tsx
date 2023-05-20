@@ -2,13 +2,15 @@ import LeftTop from '../assets/left-top.svg'
 import RightTop from '../assets/right-top.svg'
 import Logo from '../assets/logo.svg'
 import BgCount from '../assets/bg-count.svg'
+import Arrow from '../assets/arrow.svg'
 import { HTMLProps } from 'react'
 
 const images = {
   'left-top': LeftTop,
   'right-top': RightTop,
   'logo': Logo,
-  'bg-count': BgCount
+  'bg-count': BgCount,
+  'arrow': Arrow
 }
 
 interface IImageCustom {
