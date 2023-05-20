@@ -11,6 +11,11 @@
   background-color: $text-dark-blue-color;
   position: relative;
   margin-top: auto;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
   
   @media (max-width: 786px) {
     height: 160px;
@@ -38,7 +43,7 @@
 
     input {
       position: relative;
-      width: 360px;
+      width: 100%;
       padding: 19px 65px 17px 25px;
       border-radius: 30px;
       border: none;
@@ -80,6 +85,7 @@
       border-radius: 50%;
       width: 43px;
       height: 43px;
+      cursor: pointer;
 
       @media (max-width: 786px) {
         width: 33px;
@@ -102,6 +108,14 @@
     font-size: 20px;
     top: 75px;
     right: 115px;
+    cursor: pointer;
+
+    @media (max-width: 1024px) {
+      position: relative;
+      top: 8px;
+      right: 0px;
+      gap: 6px;
+    }
 
     @media (max-width: 786px) {
       position: relative;
