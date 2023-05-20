@@ -9,12 +9,23 @@
   align-items: center;
   padding-top: 110px;
 
+  @media (max-width: 786px) {
+    height: 1006px;
+  }
+
   .left-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 470px;
     height: 420px;
+
+    @media (max-width: 786px) {
+      top: -20px;
+      left: -10px;
+      width: 255px;
+      height: 230px;
+    }
   }
 
   .right-image {
@@ -23,12 +34,25 @@
     top: 0;
     width: 280px;
     height: 320px;
+
+    @media (max-width: 786px) {
+      //top: -20px;
+      //left: -10px;
+      width: 240px;
+      height: 280px;
+    }
   }
 
   .logo {
     position: relative;
     left: 2px;
     width: 200px;
+
+    @media (max-width: 786px) {
+      width: 185px;
+      top: -10px;
+      //left: 7px;
+    }
   }
 
   .title {
@@ -37,6 +61,11 @@
     font-weight: 700;
     font-size: 72px;
     margin-top: 75px;
+
+    @media (max-width: 786px) {
+      font-size: 36px;
+      margin-top: 150px;
+    }
   }
 
   .description {
@@ -46,6 +75,13 @@
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+
+    @media (max-width: 786px) {
+      top: 0;
+      margin-top: 10px;
+      font-size: 16px;
+      width: 300px;
+    }
   }
 
   .description-button {
@@ -53,6 +89,11 @@
     font-weight: 400;
     font-size: 18px;
     color: $text-dark-color;
+
+    @media (max-width: 786px) {
+      margin-top: 52px;
+      font-size: 16px;
+    }  
   }
 
   .button {
@@ -68,6 +109,10 @@
     padding: 16px 20px 16px 26px;
     width: 240px;
     border-radius: 30px;
+
+    @media (max-width: 786px) {
+      margin-top: 15px;
+    }  
   }
 
   .footer {

@@ -7,7 +7,7 @@ function App() {
   return (
     <main className={styles.main}>
       <Home />
-      <EventPage />
+      {/* <EventPage /> */}
     </main>
   )
 }

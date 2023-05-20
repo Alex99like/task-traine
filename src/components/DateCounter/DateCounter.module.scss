@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 9px;
+
+  @media (max-width: 786px) {
+    margin-top: 30px;
+  }
   
   .divider {
     position: relative;
@@ -12,6 +16,10 @@
     font-weight: 600;
     font-size: 72px;
     color: $text-dark-blue-color;
+
+    @media (max-width: 786px) {
+      font-size: 36px;
+    }
   }
 }
 
@@ -21,11 +29,21 @@
   align-items: center;
   justify-content: center;
   width: 115px;
+
+  @media (max-width: 786px) {
+    width: 70px;
+    height: 80px;
+    justify-content: space-between;
+  }
   
   .count {
     font-weight: 600;
     font-size: 72px;
     color: $text-dark-blue-color;
+
+    @media (max-width: 786px) {
+      font-size: 36px;
+    }
   }
 
   .container {
@@ -43,11 +61,38 @@
       font-weight: 400;
       font-size: 16px;
       z-index: 2;
+
+      @media (max-width: 786px) {
+        display: none;
+      }
+    }
+
+    .min-name {
+      display: none;
+
+      @media (max-width: 786px) {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        z-index: 1;
+        color: #fff;
+      }
     }
 
     .img {
-      
+      @media (max-width: 786px) {
+        display: none;
+      }
       position: absolute;
+    }
+
+    .img-min {
+      display: none;
+
+      @media (max-width: 786px) {
+        display: block;
+        position: absolute;
+      }
     }
   }
 }
