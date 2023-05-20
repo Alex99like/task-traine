@@ -11,7 +11,7 @@ interface IAccordionItem {
 
 export const AccordionItem = ({ name, img, date, count, active, setActive }: IAccordionItem) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${active && styles.active}`}>
       <div className={styles.item} onClick={() => setActive(name)}>
         <h3 className={styles.name}>{name}</h3>
         {!active && (
