@@ -12,6 +12,7 @@
   position: relative;
   margin-top: auto;
 
+
   @media (max-width: 1024px) {
     flex-direction: column;
     align-items: center;
@@ -31,6 +32,19 @@
     width: 440px;
     position: relative;
     top: -5px;
+
+    .error {
+      position: absolute;
+      top: -23px;
+      left: 10px;
+      color: #fff;
+      background-color: #df22258c;
+      font-size: 10px;
+      padding: 0 10px;
+      border-radius: 5px;
+      border: 1px solid #ca0508;
+      animation: animate-opacity .3s ease-in-out forwards;
+    }
 
     @media (max-width: 786px) {
       width: 360px;
@@ -134,5 +148,17 @@
     .icon {
       transform: rotate(90deg);
     }
+  }
+}
+  
+@keyframes animate-opacity {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

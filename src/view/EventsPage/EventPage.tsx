@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { forwardRef, useState } from 'react';
 import { AccordionItem } from '../../components/AccordionItem/AccordionItem';
 import styles from './EventPage.module.scss';
 import ImageAcc from '../../assets/img/one-event.jpg'
@@ -14,7 +14,7 @@ const dataAccordion = {
   eight: { name: 'Client Care Plans', count: '08', data: '13.02.2023' },
 }
 
-export const EventPage = () => {
+export const EventPage = forwardRef<HTMLDivElement>((_, ref) => {
   const [activeCard, setActiveCard] = useState<string>(dataAccordion.one.name)
 
   const handlerActive = (value: string) => {
@@ -25,7 +25,7 @@ export const EventPage = () => {
     <section className={styles.wrapper}>
       <h2 className={styles.title}>ALL EVENTS</h2>
 
-      <div className={styles.accordion}>
+      <div className={styles.accordion} ref={ref}>
         {Object.values(dataAccordion).map(item => (
           <AccordionItem 
             key={item.name} 
@@ -40,4 +40,4 @@ export const EventPage = () => {
       </div>
     </section>
   )
-}
+})

@@ -5,8 +5,8 @@ import { Modal } from '../../components/Modal/Modal'
 import { ImageCustom } from '../../utils/ImageCustom'
 import styles from './Home.module.scss'
 
-export const Home = () => {
-  const [activeModal, setActiveModal] = useState(true)
+export const Home = ({ scrollHandle }: { scrollHandle: () => void }) => {
+  const [activeModal, setActiveModal] = useState(false)
 
   return (
     <section className={styles.wrapper}>
@@ -18,8 +18,12 @@ export const Home = () => {
       <p className={styles.description}>We're making lots of improvements and will be back soon</p>
       <DateCounter />
       <p className={styles['description-button']}>Check our event page when you wait:</p>
-      <button className={styles.button}>Go to the event <ImageCustom name='arrow'/></button>
-      <Footer setActive={setActiveModal} />
+      <a 
+        href='https://drive.google.com/file/d/1EgjO8PPcN3WN8VsUSXpc91eg3QQtYRQC/view' 
+        className={styles.button}
+        target='_blank'
+      >Go to the event <ImageCustom name='arrow'/></a>
+      <Footer setActive={setActiveModal} scrollHandle={scrollHandle} />
     </section>
   )
 }
