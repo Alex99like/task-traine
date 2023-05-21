@@ -1,0 +1,39 @@
+@import '././../../styles/variables.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 95px;
+  padding-bottom: 100px;
+
+  @media (max-width: 786px) {
+    padding-top: 38px;
+    padding-bottom: 100px;
+  }
+
+  .title {
+    color: $gray-text-color;
+    font-weight: 700;
+    font-size: 72px;
+
+    @media (max-width: 786px) {
+      flex-direction: column;
+      font-size: 36px;
+    }
+  }
+
+  .accordion {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+    gap: 2px;
+    width: 100%;
+
+    @media (max-width: 1280px) {
+      flex-direction: column;
+      margin-top: 10px;
+      padding: 0 30px;
+    }
+  }
+}
